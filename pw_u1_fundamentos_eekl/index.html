@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi primera página web (Ed y Kelly) </title>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Mi primera página web (Ed y Kelly) </title>
 </head>
+
 <body>
-    <header>
-       <h1>Universidad Central del Ecuador</h1>
-       <h5>Carrera de Computación</h5>
-    </header>
-    <nav>
-        
-    </nav>
-    <section>
-        <!-- Cabeceras de secciones -->
-        <h3>Mi primera página web</h3>
-        <h4>Estudiante</h4>
+     <header>
+          <h1>Universidad Central del Ecuador</h1>
+          <h5>Carrera de Computación</h5>
+     </header>
+     <nav>
 
-        <!-- Párrafos -->
-         <p>Mi primer párrafo</p>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, assumenda?</p>
+     </nav>
+     <section>
+          <!-- Cabeceras de secciones -->
+          <h3>Mi primera página web</h3>
+          <h4>Estudiante</h4>
 
-         <!-- Textos -->
+          <!-- Párrafos -->
+          <p>Mi primer párrafo</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, assumenda?</p>
+
+          <!-- Textos -->
           <strong>Texto que quiero resaltar.</strong>
           <br>
-          <em>Texto en cursiva resaltado</em>
+          <em>Texto en cursiva resaltado, énfasis semántico</em>
+          <em>juegos de matemáticas</em>
           <br>
           <i>Texto en cursiva</i>
           <br>
@@ -37,38 +40,110 @@
           <hr>
 
           <!-- Listas -->
-           <ul>
-                <li>Lunes</li>
-                <li>Martes</li>
-                <li>Miercoles</li>
-                <li>Jueves</li>
-                <li>Viernes</li>
-           </ul>
+          <ul>
+               <li>Lunes</li>
+               <li>Martes</li>
+               <li>Miercoles</li>
+               <li>Jueves</li>
+               <li>Viernes</li>
+          </ul>
 
-           <ol type="I">
-                <li>Primero</li>
-                <li>Segundo</li>
-                <li>Tercero</li>
-                <li>Cuarto</li>
-                <li>Quinto</li>
-           </ol>
+          <ol type="I">
+               <li>Primero</li>
+               <li>Segundo</li>
+               <li>Tercero</li>
+               <li>Cuarto</li>
+               <li>Quinto</li>
+          </ol>
 
-           <ol type="i">
-                <li>Primero</li>
-                <li>Segundo</li>
-                <li>Tercero</li>
-                <li>Cuarto</li>
-                <li>Quinto</li>
-           </ol>
+          <ol type="i">
+               <li>Primero</li>
+               <li>Segundo</li>
+               <li>Tercero</li>
+               <li>Cuarto</li>
+               <li>Quinto</li>
+          </ol>
 
-           <!-- Tablas -->
+          <!-- Tablas -->
+          <h2>Tabla Estudiante</h2>
+          <table border="1">
+               <thead>
+                    <tr>
+                         <th>Nombre</th>
+                         <th>Apellido</th>
+                         <th>Cédula</th>
+                         <th>Acción</th>
+                    </tr>
+               </thead>
+               <tbody>
+                    <tr>
+                         <th>Kelly</th>
+                         <th>Ledesma</th>
+                         <th>1750326595</th>
+                         <th>
+                              <button>Editar</button>
+                         </th>
+                    </tr>
+                    <tr>
+                         <th>Ronaldo</th>
+                         <th>Enriquez</th>
+                         <th>1552598675</th>
+                         <th>
+                              <button>Editar</button>
+                         </th>
+                    </tr>
+                    <tr>
+                         <th>Nino</th>
+                         <th>Nakano</th>
+                         <th>1665325698</th>
+                         <th>
+                              <button>Editar</button>
+                         </th>
+                    </tr>
+               </tbody>
+          </table>
 
-    </section>
-    <aside></aside>
-    <footer>
-        Av. America entre la Gasca y Bolivia
-        <br>
-         ©Copyright Todos los derechos reservados Kelly & Edison.
-    </footer>
+          <br>
+          <!-- Contenedores HTML -->
+          <div>
+               <button>Actualizar</button>
+               <button>Eliminar</button>
+               <button>Guardar</button>
+          </div>
+
+          <!-- header, body, nav, section = otros contenedores-->
+
+          <!-- Formularios -->
+          <form action="https://www.google.com">
+               <h1>Formulario Estudiante</h1>
+               <label for="id_name">Nombre: </label>
+               <input id="id_name" type="text"><br>
+               <label for="id_email">Email: </label>
+               <input id="id_email" type="email"><br>
+               <label for="id_date">Fecha Nacimiento: </label>
+               <input id="id_date" type="date"><br>
+               <label for="id_password">Password: </label>
+               <input id="id_password" type="password">
+               <button>Guardar</button>
+          </form>
+
+          <!-- Multimedia -->
+          <br>
+          <h2>Multimedia</h2>
+          <img src="img/asa.jpg" width="300px" alt="Asa Babymon7er">
+          <img src="" alt="Imagen no disponible">
+          <br>
+          <video controls  width="300px">
+               <source src="video/V.mp4" type="video/mp4">
+          </video>
+     </section>
+     <aside></aside>
+     <footer>
+          <br>
+          Av. America entre la Gasca y Bolivia
+          <br>
+          ©Copyright Todos los derechos reservados Kelly & Edison.
+     </footer>
 </body>
+
 </html>
