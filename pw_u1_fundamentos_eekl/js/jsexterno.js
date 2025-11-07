@@ -96,14 +96,14 @@ function fundamentosJS() {
     // Sentencias de Control
 
     let edad = 19;
-    if(edad >= 18) {
+    if (edad >= 18) {
         console.log('Es mayor de Edad');
-    }else{
+    } else {
         console.log('En menor de Edad');
     }
 
     let dia = 'lunes';
-    switch(dia){
+    switch (dia) {
         case 'lunes':
             console.log('Es lunes');
             break;
@@ -114,12 +114,12 @@ function fundamentosJS() {
             console.log('No es ninguno de esos dias');
     }
 
-    for(let i=0; i<=5; i++){
+    for (let i = 0; i <= 5; i++) {
         console.log(i);
     }
 
     const frutas = ['manzana', 'sandia', 'papaya', 'naranja'];
-    for(let fruta of frutas) {
+    for (let fruta of frutas) {
         console.log(fruta);
     }
 
@@ -138,18 +138,123 @@ function fundamentosJS() {
     profesor.apellido = 'Teran';
     console.log(profesor);
 
-    if(profesor.ciudad === 'Quito') {
+    if (profesor.ciudad === 'Quito') {
         console.log('Es Quiteño');
     }
 
-    if(profesor.edad !== 36) {
+    if (profesor.edad !== 36) {
         console.log('Es diferente de 36');
-    }else{
+    } else {
         console.log('Es 36');
     }
 
-    for(let clave in profesor) {
+    for (let clave in profesor) {
         console.log(clave);
         console.log(profesor[clave]);
     }
+
+    const e1 = {
+        nombre: 'Kelly',
+        apellido: 'Ledesma',
+        edad: 22,
+        ecuatoriana: true,
+        genero: 'F',
+        ciudad: 'Quito'
+    };
+    const e2 = {
+        nombre: 'Ronaldo',
+        apellido: 'Enriquez',
+        edad: 21,
+        ecuatoriana: true,
+        genero: 'M',
+        ciudad: 'Quito'
+    };
+
+    const arregloEstudiantes = [e1, e2, {
+        nombre: 'Kelly 2',
+        apellido: 'Ledesma',
+        edad: 25,
+        ecuatoriana: true,
+        genero: 'F',
+        ciudad: 'Quito'
+    }];
+    console.log(arregloEstudiantes[0]);
+    console.log(arregloEstudiantes[2]);
+
+    // Desestructuración 
+    // Arreglos
+    const ar1 = [1, 2, 3, 4, 5, 6, 7];
+    const [p1, p2, p3, p4, p5] = ar1;
+    console.log(p1);
+    console.log(p5);
+
+    const [primero, , , , , , utlimo] = ar1;
+    console.log(primero);
+    console.log(utlimo);
+
+    const [post1, post2] = [1, 2, 3, 4, 5, 6, 7];
+    imprime(ar1);
+
+    // Objetos
+    const e3 = {
+        nombre: 'Ronaldo',
+        apellido: 'Enriquez',
+        edad: 21,
+        ecuatoriana: true,
+        genero: 'M',
+        ciudad: 'Quito'
+    };
+
+    const { nombre: n, ciudad: ciu } = e3;
+    console.log(n);
+    console.log(ciu);
+
+    const { nombre: nom, ciudad: ciud } = {
+        nombre: 'Kelly',
+        apellido: 'Ledesma',
+        edad: 22,
+        ecuatoriana: true,
+        genero: 'F',
+        ciudad: 'Quito'
+    }
+
+    console.log(nom);
+    console.log(ciud);
+
+    const e4 = {
+        nombre: 'Kelly',
+        apellido: 'Ledesma',
+        edad: 22,
+        ecuatoriana: true,
+        genero: 'F',
+        ciudad: 'Quito',
+        direccion: {
+            calle: 'Av. America',
+            barrio: 'La Gasca',
+            numeracion: '1598'
+        }
+    }
+
+    console.log(e4.direccion);
+    console.log(e4.direccion.barrio);
+
+    const {edad: ed, direccion} = e4;
+    console.log(ed);
+    console.log(direccion);
+    const {calle} = direccion;
+    console.log(calle);
+
+    const {direccion:{barrio, calle:c1, numeracion}} = e4;
+    console.log(barrio);
+    console.log(c1);
+    console.log(numeracion);
+
+    console.log(ed);
+    
+}
+
+function imprime([a, b, c]) {
+    console.log(a);
+    console.log(b);
+    console.log(c);
 }
