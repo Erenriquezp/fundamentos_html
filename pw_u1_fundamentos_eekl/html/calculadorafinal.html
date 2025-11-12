@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora</title>
+
     <link rel="stylesheet" href="../css/calculadoraFinal.css">
     <script src="../js/calculadoraFinal.js"></script>
 </head>
@@ -13,34 +13,38 @@
     <div class="container">
         <header>Calculadora</header>
         <nav>Barra de Navegación</nav>
+
         <section>
             <div id="calculadora">
-                <!-- <label id="display" for="">0+1=1</label> -->
-                <div id="display"></div>
-                <button>C</button>
-                <button>&larr;</button>
-                <button>%</button>
-                <button>/</button>
+                <div id="display">0</div>
+
+                <button class="control" onclick="limpiarDisplay()">C</button>
+                <button class="control" onclick="retroceso()">&larr;</button>
+                <button class="control" onclick="porcentaje()">%</button>
+                <button class="operator" onclick="mostrarDisplay('/')">/</button>
+
                 <button onclick="mostrarDisplay(7)">7</button>
                 <button onclick="mostrarDisplay(8)">8</button>
                 <button onclick="mostrarDisplay(9)">9</button>
-                <button onclick="mostrarDisplay('*')">*</button>
+                <button class="operator" onclick="mostrarDisplay('*')">*</button>
+
                 <button onclick="mostrarDisplay(4)">4</button>
                 <button onclick="mostrarDisplay(5)">5</button>
                 <button onclick="mostrarDisplay(6)">6</button>
-                <button onclick="mostrarDisplay('-')">-</button>
+                <button class="operator" onclick="mostrarDisplay('-')">-</button>
+
                 <button onclick="mostrarDisplay(1)">1</button>
                 <button onclick="mostrarDisplay(2)">2</button>
                 <button onclick="mostrarDisplay(3)">3</button>
-                <button onclick="mostrarDisplay('+')">+</button>
+                <button class="operator" onclick="mostrarDisplay('+')">+</button>
+
                 <button onclick="mostrarDisplay(0)">0</button>
                 <button onclick="mostrarDisplay('.')">.</button>
-                <button class="column-2" onclick="calcular">=</button>
+                <button class="column-2 igual" onclick="calcular()">=</button>
             </div>
         </section>
+
         <footer></footer>
     </div>
-
 </body>
-
 </html>
