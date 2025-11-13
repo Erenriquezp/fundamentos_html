@@ -1,0 +1,69 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background: #a5d4f3;
+}
+
+p:before {
+    content: attr(type);
+    display: block; /* importante manera correcta del formulario */
+    font-size: 20px;
+    color: #033150;
+    margin-top: 40px;
+}
+
+input {
+    width: 270px;
+    border: none;
+    border-bottom: 2px solid #03058a;
+    background: none;
+    color: #05426b;
+    padding-top: 10px;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 3px solid #090cc9;
+}
+
+.formulario {
+    background: #d9f0fb;
+    display: flex;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    width: 100px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #033150;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.centrar-boton {
+    display: flex;
+    justify-content: center;
+}
+
+h2, header {
+    color: #033150;
+    border-bottom: 2px solid #b9d8ec;
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #033150;
+}
