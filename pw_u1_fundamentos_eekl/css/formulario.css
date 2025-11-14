@@ -62,6 +62,21 @@ h2, header {
     margin-bottom: 20px;
 }
 
+.msg_error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    background: #f7dadc;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+.error_asterisco {
+    color: red;
+    font-size: 20px;
+}
+
 footer {
     margin-top: 20px;
     font-size: 14px;
