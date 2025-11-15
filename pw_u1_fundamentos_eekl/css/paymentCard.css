@@ -1,0 +1,93 @@
+.formulario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 40px;
+}
+
+
+.card {
+    background-color: #080cff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 350px;
+    margin: auto;
+    color: white;
+}
+
+.card-front span {
+    display: block;
+}
+
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #b8d0e0;
+}
+
+.bottom-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-logo {
+    text-align: right;
+    font-weight: bold;
+    font-size: 34px;
+    margin: 0px 5px;
+}
+
+.card-number {
+    font-size: 22px;
+    letter-spacing: 3px;
+    margin: 45px 0;
+}
+
+.card-expiration {
+    text-align: right;
+}
+
+.card-holder-name {
+    text-align: left;
+}
+
+.card-valid-thru {
+    text-align: right;
+}
+
+p:before {
+    content: attr(type);
+    display: block; /* importante manera correcta del formulario */
+    font-size: 20px;
+    color: #254d68;
+    margin-top: 40px;
+    padding-bottom: 10px;
+}
+
+input {
+    width: 210px;
+    border: 1px solid #03058a;
+    background: none;
+    color: #05426b;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+input:focus {
+    outline: none;
+    border: 3px solid #090cc9;
+}
+button {
+    width: 250px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #0c20d4;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}

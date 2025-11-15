@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Details</title>
+    <link rel="stylesheet" href="../css/paymentCard.css">
+    <script src="../js/paymentCard.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>Universidad Central del Ecuador</header>
+        <div class="formulario">
+            <div class="card">
+                <div class="card-front">
+                    <span class="card-logo">VISA</span>
+                    <span class="card-number">#### #### #### ####</span>
+                    <div class="top-container">
+                        <span class="card-holder">CARD HOLDER</span>
+                        <span class="card-expiry">EXPIRES</span>
+                    </div>
+                    <div class="bottom-container">
+                        <span class="card-holder-name">Miku Nakano</span>
+                        <span class="card-expiry-date">MM/YY</span>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <form action="#">
+                    <h2>Payment Details</h2>
+                    <div id="id_msg_error" class="msg_error"></div>
+                    <p type="Cardholder Name:"><input id="id_card_holder" type="text" placeholder="Miku Nakano"><span
+                            id="id_error_card_holder" class="error_asterisco"></span></p>
+                    <p type="Card Number:"><input id="id_card_number" type="text"
+                            placeholder="#### #### #### ####"><span id="id_error_card_number"
+                            class="error_asterisco"></span></p>
+                    <p type="Exp Date:"><input id="id_expiration_date" type="date" placeholder="MM/YY">
+                        <span id="id_error_expiration_date" class="error_asterisco"></span>
+                    </p>
+                    <p type="CVV:"><input id="id_cvv" type="password" placeholder="###">
+                        <span id="id_error_cvv" class="error_asterisco"></span>
+                    </p>
+                    <div class="centrar-boton">
+                        <button onclick="">Confirm</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+
+        <footer>Todos los derechos reservados</footer>
+    </div>
+
+</body>
+
+</html>
